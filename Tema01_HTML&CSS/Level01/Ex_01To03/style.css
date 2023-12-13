@@ -1,0 +1,315 @@
+
+
+
+body{
+	height: 100%;
+	width: 90%;
+	max-width: 1400px;
+	display: block;
+	align-content:center;
+	flex-direction: column;
+	margin-right: auto;
+	margin-left: auto;
+	/*
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;*/
+    /*margin: 15px;*/
+}
+
+header, #main, footer{
+	color: black;
+	background-color: black;
+	width: 100%;
+	height:100%;
+	z-index: 1;
+	/*padding: 15px 10px 15px 15px;*/
+	padding: 15px;
+}
+
+
+
+.text{
+	margin: 14px 0px 14px 0px;
+	z-index:3;
+	height: 21px
+	
+}
+#headSup{
+	background-color: blue;
+	z-index:7;
+	justify-content: center;
+	display: flex;
+	
+}
+
+#headInf{
+	background-color: orange;
+}
+
+#headSup > .lat{
+	width: 20%;
+}
+
+#headSup > div{
+	background-color: pink;
+}
+
+#headSup > div:nth-child(1){
+	margin-right: auto;
+}
+#headSup > .center{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#headSup > div:nth-child(3){
+	margin-left: auto;
+	margin-right: 0;
+}
+
+
+.center{
+	width: 50%;
+}
+#headSup > div, #headInf > div{
+	display: inline-block;
+	text-align: center;
+	
+}
+
+	
+
+
+#headSup, #headInf, #mainLeft, #mainRight, footer, header, #main{
+	padding: 21px;
+	margin: 15px auto 15px auto;
+}
+#headInf > .text{
+	background-color: yellow;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+}
+
+#main{
+	display: flex;
+	justify-content: center;
+
+}
+#mainLeft{
+	background-color: grey;
+	width: 60%;
+	display: grid;
+	margin: 15px auto 15px 0;
+	
+}
+
+
+
+#mainLeft > div > div:nth-child(odd){
+	background-color: blue;
+	width: 45%;
+	margin-right: auto;
+	margin-left: 0px;	
+}
+#mainLeft > div > div:nth-child(even){
+	background-color: blue;
+	width: 45%;
+	margin-right: 0px;
+	margin-left: auto;	
+}
+#mainLeft > div:last-child{
+	background-color: lightblue;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	place-self: center;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#mainRight {
+	display: grid;
+	width: 30%;
+	background-color: red;
+	display: inline-table;
+	margin: 15px 0 15px auto;
+	
+}
+
+#mainRight > div{
+	background-color: yellow;
+	width: 100%%;
+	margin: auto;
+	margin-top: 15px;
+	
+	
+}
+
+.elx2 {
+	width: 100%;
+	background-color: inherit;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	place-self: center;
+	
+}
+
+footer > .text{
+	background-color: yellow;
+	/*margin: 0;*/
+	margin: 15px auto 15px auto;
+}
+
+
+/*Min Width For Devices:
+ * Just 3 resolutions as example:
+ * 480px -> Phone
+ * 600px -> Tablets
+ * 1025px -> Desktops
+ * */
+
+
+
+@media screen and (max-width:1025px) and (min-width:600px){
+	
+	body{
+		width: 80%;
+		/*max-width:600px;*/
+	
+	}
+	
+	#main{
+		background-color: yellow;
+		display: inline-table;
+	}
+	#mainRight{
+		width: 100%;
+		width: -moz-available;          /* WebKit-based browsers will ignore this. */
+		width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+		width: fill-available;
+		display: inline-table;
+		place-self: center;
+	}
+	
+	#mainLeft{
+		width: 100%;
+		width: -moz-available;          /* WebKit-based browsers will ignore this. */
+		width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+		width: fill-available;
+		display: inline-table;
+	}
+	
+	/*
+	#mainLeft > div > div{
+		background-color: blue;
+		width: 100%;
+		margin-right: 0px;
+		margin-left: auto;	
+	}
+	#mainLeft > div > div:nth-child(odd), #mainLeft > div > div:nth-child(even){
+		background-color: blue;
+		width: 100%;
+		margin-right: 0px;
+		margin-left: auto;	
+	}
+		
+	.elx2{
+		display: inline-block;
+	}
+	.elx2 > text{
+		width:100%;
+	}
+	*/
+	
+}
+
+
+@media screen and (max-width:600px) and (min-width: 260px){
+	body{
+		width: 80%;
+		/*max-width:600px;*/
+		display: block;
+		align-content:center;
+		/*margin-right: auto;*/
+		margin-left: auto;
+	
+	}
+	
+	#main{
+		background-color: yellow;
+		display: inline-table;
+	}
+	#mainRight{
+		width: 100%;
+		width: -moz-available;          /* WebKit-based browsers will ignore this. */
+		width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+		width: fill-available;
+		display: inline-table;
+		place-self: center;
+	}
+	
+	#mainLeft{
+		width: 100%;
+		width: -moz-available;          /* WebKit-based browsers will ignore this. */
+		width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+		width: fill-available;
+		display: inline-table;
+	}
+	
+	#mainLeft > div > div{
+		background-color: blue;
+		width: 100%;
+		margin-right: 0px;
+		margin-left: auto;	
+	}
+	#mainLeft > div > div:nth-child(odd), #mainLeft > div > div:nth-child(even){
+		background-color: blue;
+		width: 100%;
+		margin-right: 0px;
+		margin-left: auto;	
+	}
+		
+	.elx2{
+		display: inline-block;
+	}
+	.elx2 > text{
+		width:100%;
+	}
+}
+
+/*TRYING TO CENTER THE BODY PERFECTLY*/
+
+/* FIRST ATTEMPT DOES NOT WORK PROPERLY
+html, body {
+    height: 100%;
+    width: 100%
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+*/
+/*SECOND ATTEMPT:
+ */
+/* DOES NOT WORK AS WELL
+body {
+	max-width: max-content;
+	margin: auto;
+}*/
+/*TODO FOR THE FUTURE
+ * SOURCE: https://stackoverflow.com/questions/6464592/how-to-align-entire-html-body-to-the-center
+ * A lot of possibilities.. none of them seem to work properly...*/

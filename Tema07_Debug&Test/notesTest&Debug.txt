@@ -1,0 +1,47 @@
+
+************ TEST AND DEBUG PHP *************
+
+- Software:
+	- phpunit
+		apt install phpunit
+		
+		
+****************** PHP UNIT *****************
+
+- Documentation:
+	Official -> https://phpunit.de/documentation.html
+	Other:
+	
+
+
+- Useful Functions:
+	
+
+- Remember / Hints:
+	- php file must have the same name as the class created inside
+	
+
+- For ON PORPOSE "Risky" Test Add before:
+	/**
+	 * @doesNotPerformAssertions
+	 */
+
+
+**************ACCES MODIFIER ******************
+
+    public - the property or method can be accessed from everywhere. This is default
+    protected - the property or method can be accessed within the class and by classes derived from that class
+    private - the property or method can ONLY be accessed within the class
+
+
+
+**************DATA PROVIDER ******************
+
+- SOURCES:
+	https://phpunit.de/manual/3.7/en/writing-tests-for-phpunit.html
+	
+	
+
+	
+
+

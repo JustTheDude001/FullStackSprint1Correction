@@ -1,0 +1,22 @@
+body{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	flex-direction: column;
+	justify-content: center;
+	background-color: Black;
+	
+}
+
+.divForm{
+	margin-top: 30px;
+	background-color: grey;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 20px 20px;
+}
+.divForm > h3{
+	text-align: center;
+	width: auto;
+}
+

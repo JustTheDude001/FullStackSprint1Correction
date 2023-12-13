@@ -1,0 +1,9 @@
+
+phpunit -c phpunit.xml
+(-c lowercase)
+OR
+
+phpunit --configuration phpunit.xml
+
+- Configuration File Sources:
+	https://docs.phpunit.de/en/9.6/configuration.html
