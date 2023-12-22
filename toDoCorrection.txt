@@ -1,0 +1,20 @@
+CORRECTION SPRINT 1:
+
+- Tema 0 --> 10/10 [Nothing]
+- Tema 1 --> 5.83/10
+	- Redo level 2 and 3 without php
+- Tema 2 --> 9.17/10
+	- Improve Erastotenes Algorithm
+- Tema 3 --> 10/10 [Nothing]
+- Tema  4 --> 7.73/10
+	- Level 2
+		- Question 1 -> Enums
+		- Question 2 -> Yes
+	- Level 3
+		(Redo and Explain)
+- Tema 5 --> 0/10 
+	- Redo Clean
+- Tema 6 --> 10/10 [Nothing]
+- Tema 7 --> 0/10
+	- Redo in Windows 10 Virtual Machine
+		
